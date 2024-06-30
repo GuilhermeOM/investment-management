@@ -34,3 +34,15 @@ Execução das aplicações
   # executar client api
   dotnet run
 ```
+
+## Utilização
+#### A aplicação parte de 2 apis e um servidos websocker, onde ambas apis possuem o swagger configurado e o servidor websocket no momento ainda não possue integração.
+    
+* ClientAPI - responsável pelos processos voltados ao client: criação de usuario, buscar produtos comprados, verificar mercados, etc.
+* OperatorAPI - responsável pelos processos voltado ao operador: cadastrar produto financeiro (no momento apenas ações com pagamentos de dividendos), verificar portifolio, cadastrar empresa.    
+* WS - comunicar com uma interface para notificar as atualizações do mercado em tempo real.
+
+## TODO
+- [ ] Verificação de extrato das compras.
+- [ ] Serviço para notificar aproximação de data de expiração.
+- [ ] fluxo de compras no mercado secundario.
